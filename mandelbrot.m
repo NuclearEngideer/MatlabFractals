@@ -1,6 +1,7 @@
 function mandelbrot
 % Mandelbrot plots either the Mandelbrot set or a user-specified Julia set.
-% Follow the onscreen prompts.
+% Follow the onscreen prompts. Zoom with the tools dropdown in the figure
+% window.
 %
 % When prompted, a good value for detail is between 500 and 1000.
 % Increasing this in conjunction with the internal "niter" variable can
@@ -13,7 +14,7 @@ function mandelbrot
 % number in the form of A+B*1i. For example: -0.79 + 0.15*1i returns a
 % recognizeable Julia set.
 
-niter=100; %increase for zoomed detail, decrease for faster runs
+niter=500; %increase for zoomed detail, decrease for faster runs
 %Higher value of niter will make the set more detailed at higher levels of
 %zoom but will "oversharpen" the starting plots. 100 or so is a good
 %intermediate for smaller zoom levels and just kind of poking around the
