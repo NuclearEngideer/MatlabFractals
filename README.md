@@ -4,6 +4,6 @@ Plotting tool for Mandelbrot and Julia sets. Easy to use with the ability to plo
 <p align='center'>
   <img src='/Examples/ex4.png'>
   <img src='/Examples/ex2.jpg'>
-  <img src='/Examples/ex3.jng'>
+  <img src='/Examples/ex3.jpg'>
   <img src='/Examples/ex1.jpg'>
 </p>
