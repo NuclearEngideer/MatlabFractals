@@ -1,5 +1,5 @@
 # MatlabFractals
-Plotting too for Mandelbrot and Julia sets. Easy to use with the ability to plot any Julia set and have nearly unlimited zoom in both sets.
+Plotting tool for Mandelbrot and Julia sets. Easy to use with the ability to plot any Julia set and have nearly unlimited zoom in both sets.
 
 ![Example 1](/Examples/ex4.png)
 ![Example 2](/Examples/ex2.jpg)
