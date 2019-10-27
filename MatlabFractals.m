@@ -25,8 +25,7 @@ detail = input('Resolution (higher for more detail): ');
 [x,y]=meshgrid(linspace(-2,2,detail),linspace(-2,2,detail));
 
 %defining initial variables
-c='o'; %choose string to allow any numerical value of c for julia sets
-multiplier = 1;
+multiplier=1;
 run=1;
 
     while run ==1
@@ -52,7 +51,7 @@ run=1;
             z=zeros(size(c));
         elseif fork=='j' %Julia set definitions
             niter=niter*2; %increase iterations because julia sets are finer than the mandelbrot set
-            if c=='o'
+            if exist('c', 'var')==0
                 fprintf('Please enter complex number for julia set in the form of A+B*i: \n');
                 A=input('A: ');
                 B=input('B: ');
