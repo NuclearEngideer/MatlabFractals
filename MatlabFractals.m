@@ -18,14 +18,14 @@ MaxComputeTime=5*60; %Time in seconds for longest desired computation time
 fork = input('Type m for Mandelbrot, j for Julia: ', 's');
 %spoon = something to eat soup with
 
-colormap('jet'); %Change to play with colors
+colormap('jet'); %Change to play with colors (see Mathworks page on colormaps)
 
 detail = input('Resolution (higher for more detail): ');
 
 [x,y]=meshgrid(linspace(-2,2,detail),linspace(-2,2,detail));
 
 %defining initial variables
-c=0;
+c='o'; %choose string to allow any numerical value of c for julia sets
 multiplier = 1;
 run=1;
 
@@ -52,7 +52,7 @@ run=1;
             z=zeros(size(c));
         elseif fork=='j' %Julia set definitions
             niter=niter*2; %increase iterations because julia sets are finer than the mandelbrot set
-            if c==0
+            if c=='o'
                 fprintf('Please enter complex number for julia set in the form of A+B*i: \n');
                 A=input('A: ');
                 B=input('B: ');
