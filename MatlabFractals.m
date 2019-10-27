@@ -4,7 +4,7 @@ function MatlabFractals
 % window.
 %
 % Note that when plotting a Julia set, you will need to type the complex
-% number in the form of A+B*1i. For example: -0.79 + 0.15*1i returns a
+% number in the form of A+B*i. For example: -0.79 + 0.15*1i returns a
 % recognizeable Julia set.
 %
 % GitHub.com/NuclearEngideer ----- AveryGrieve.com
@@ -53,7 +53,7 @@ run=1;
         elseif fork=='j' %Julia set definitions
             niter=niter*2; %increase iterations because julia sets are finer than the mandelbrot set
             if c==0
-                fprintf('Please enter complex number for julia set in the form of A+B*1i: \n');
+                fprintf('Please enter complex number for julia set in the form of A+B*i: \n');
                 A=input('A: ');
                 B=input('B: ');
                 c=A+B*1i;
